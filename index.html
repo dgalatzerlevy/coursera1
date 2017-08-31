@@ -2,9 +2,101 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Hi world</title>
+    <title>Hello World</title>
+    <style>
+    /******* Base Styling *********/
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      text-align: center;
+
+    }
+    section {
+      border: 2px solid black;
+      margin-bottom: 15px;
+      margin-right: 10px;
+      margin-left: 10px;
+      background-color: red;
+      }
+    /*#s1 {
+      background-color: #A52A2A;
+
+    }
+    #s2 {
+      background-color: #DEB887;
+
+    }*/
+    p {
+      position: relative;
+      top: 0;
+      left: 70%;
+      width: 30%;
+      border: 1px solid black;
+
+    }
+    #p1 {
+      background-color: blue;
+    }
+    #p2 {
+      background-color: yellow;
+    }
+    #p3 {
+      background-color: green;
+    }
+    @media (min-width:992px) {
+      section{
+        width: 30%;
+        float: left;
+      }
+    }
+    @media (min-width:768px)and (max-width: 991px){
+      #s1 {
+        width:47%;
+        float: left;
+      }
+      #s2{
+        width: 47%;
+        float: right;
+        /*overflow: auto;*/
+      }
+      #s3{
+        float: left;
+        width:98%;
+        /*margin-right: 10px;*/
+      }
+    /*@media (max-width: 767px){
+      {}
+      }
+    }*/
+    </style>
   </head>
   <body>
-    <h1>Hellow worlds</h1>
+    <h1>Play, Think, Learn</h1>
+
+    <section id = 's1'>
+      <p id='p1'>title</p>
+      <div>Some stuff1alksdjf;lakjsdf;ajksdf
+      ;laksdjfalksjdf;lakjsdf
+      ;lakjsdf;lkjasd;fklj</div>
+      </section>
+    <section id = 's2'>
+      <p id='p2'>title</p>
+      <div>Some stkaj;sdflkja;sdlkfjas
+      laksdjf;laksjdf;lkajsdf
+      alskdjfuff2</div>
+    </section>
+    <section id = 's3'>
+      <p id='p3'>title</p>
+      <div>Some stuff3;asldkfjalskjdf;lkajsdf
+      lkasjdflkjasd;flkjas;dlkfj
+      ;alskdjf;laksjdf;lkajsdf
+      </div>
+    </section>
+    <script id="__bs_script__">//<![CDATA[
+    document.write("<script async src='http://HOST:3002/browser-sync/browser-sync-client.js?v=2.18.13'><\/script>".replace("HOST", location.hostname));
+//]]></script>
   </body>
 </html>
